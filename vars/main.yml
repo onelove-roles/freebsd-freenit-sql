@@ -1,0 +1,4 @@
+---
+sql_packages:
+  - name: "{{ python_prefix }}-psycopg2"
+  - name: "{{ python_prefix }}-sqlite3"

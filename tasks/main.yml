@@ -1,0 +1,7 @@
+---
+- name: install sql packages
+  with_items: "{{ sql_packages }}"
+  pkgng:
+    name: "{{ item.name }}"
+  notify:
+    - restart freenit
